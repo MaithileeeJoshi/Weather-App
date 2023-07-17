@@ -4,17 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
         <div class="header">
             <div class="search-box">
-                <input type="text">
+                <input type="text" placeholder="Enter your Location"
+                 class="input-box" >
+                 
+                 <button><i class="fa-solid fa-magnifying-glass"></i></button>
             </div>
         </div>                                <!--Header-->
         <div class="weather-body">
+            <img src="/assets/cloud.png" alt="Weather Immage" class="weather-img">
+
+            <div class="weather-box">
+                <p class="temperature">0<sup>°C</sup></p>
+            </div>
 
         </div>                                <!--weather-body-->
     </div>                                    <!--container-->
+
+    <script src="https://kit.fontawesome.com/3a385a1158.js" crossorigin="anonymous"></script>
 </body>
 </html>
