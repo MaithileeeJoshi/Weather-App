@@ -10,22 +10,43 @@
     <div class="container">
         <div class="header">
             <div class="search-box">
-                <input type="text" placeholder="Enter your Location"
-                 class="input-box" >
-                 
-                 <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                <input type="text" placeholder="Enter your Location" class="input-box">
+                <button><i class="fas fa-search" id="searchBtn"></i></button>
             </div>
-        </div>                                <!--Header-->
+        </div> <!-- Header -->
+        <div class="location-not-found">
+            <h1>Sorry! Location Not Found :(</h1>
+            <img src="/assets/404.png" alt="404 Error">
+        </div>
         <div class="weather-body">
-            <img src="/assets/cloud.png" alt="Weather Immage" class="weather-img">
+            <img src="/assets/cloud.png" alt="Weather Image" class="weather-img">
 
             <div class="weather-box">
                 <p class="temperature">0<sup>°C</sup></p>
+                <p class="description">Cloudy</p>
             </div>
 
-        </div>                                <!--weather-body-->
-    </div>                                    <!--container-->
+            <div class="weather-details">
+                <div class="humidity">
+                    <i class="fas fa-tint"></i>
+                    <div class="text">
+                        <span id="humidity">45%</span>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+                
+                <div class="wind">
+                    <i class="fas fa-wind"></i>
+                    <div class="text">
+                        <span id="wind-speed">12km/h</span>
+                        <p>Wind Speed</p>
+                    </div>
+                </div>
+            </div>
 
+        </div> <!-- weather-body -->
+    </div> <!-- container -->
+    <script src="script.js"></script>
     <script src="https://kit.fontawesome.com/3a385a1158.js" crossorigin="anonymous"></script>
 </body>
 </html>
